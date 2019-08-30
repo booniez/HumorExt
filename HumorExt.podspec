@@ -38,4 +38,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation', 'UIKit'
   s.dependency 'RxCocoa'
   s.dependency 'RxSwift'
+  s.dependency 'MBProgressHUD'
 end
