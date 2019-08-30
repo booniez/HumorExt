@@ -5,7 +5,7 @@ public protocol NibIdentifiable: class {
 }
 
 extension NibIdentifiable {
-    static var nib: UINib {
+    public static var nib: UINib {
         return UINib(nibName: String(describing: self), bundle: Bundle(for: self))
     }
 }
@@ -40,7 +40,7 @@ extension NibIdentifiable where Self: UIViewController {
     }
 }
 
-extension UIViewController: NibIdentifiable {
+public extension UIViewController: NibIdentifiable {
     static var nibIdentifier: String {
         return String(describing: self)
     }
