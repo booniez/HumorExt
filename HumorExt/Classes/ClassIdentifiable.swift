@@ -4,7 +4,7 @@ protocol ClassIdentifiable: class {
     static var reuseId: String { get }
 }
 
-public extension ClassIdentifiable {
+extension ClassIdentifiable {
     static var reuseId: String {
         return String(describing: self)
     }
