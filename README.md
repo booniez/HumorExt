@@ -22,7 +22,7 @@ pod 'HumorExt'
 
 ## Author
 
-yuantrybest, yuanl@ccwcar.com
+JLM, yuanl@ccwcar.com
 
 ## License
 
