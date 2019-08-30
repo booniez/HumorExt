@@ -39,7 +39,7 @@ extension UIAlertController {
     ///   - animated: set true to animate presentation of alert controller (default is true).
     ///   - vibrate: set true to vibrate the device while presenting the alert (default is false).
     ///   - completion: an optional completion handler to be called after presenting alert controller (default is nil).
-    func show(animated: Bool = true, vibrate: Bool = false, completion: (() -> Void)? = nil) {
+    public func show(animated: Bool = true, vibrate: Bool = false, completion: (() -> Void)? = nil) {
         DispatchQueue.main.async {
             UIApplication.shared.keyWindow?.rootViewController?.present(self, animated: animated, completion: completion)
             if vibrate {
@@ -55,7 +55,7 @@ extension UIAlertController {
     ///   - style: action style (default is UIAlertActionStyle.default)
     ///   - isEnabled: isEnabled status for action (default is true)
     ///   - handler: optional action handler to be called when button is tapped (default is nil)
-    func addAction(image: UIImage? = nil, title: String, color: UIColor? = nil, style: UIAlertAction.Style = .default, isEnabled: Bool = true, handler: ((UIAlertAction) -> Void)? = nil) {
+    public func addAction(image: UIImage? = nil, title: String, color: UIColor? = nil, style: UIAlertAction.Style = .default, isEnabled: Bool = true, handler: ((UIAlertAction) -> Void)? = nil) {
         let action = UIAlertAction(title: title, style: style, handler: handler)
         action.isEnabled = isEnabled
         
@@ -78,14 +78,14 @@ extension UIAlertController {
     ///   - title: alert title
     ///   - font: alert title font
     ///   - color: alert title color
-    func set(title: String?, font: UIFont, color: UIColor) {
+    public func set(title: String?, font: UIFont, color: UIColor) {
         if title != nil {
             self.title = title
         }
         setTitle(font: font, color: color)
     }
     
-    func setTitle(font: UIFont, color: UIColor) {
+    public func setTitle(font: UIFont, color: UIColor) {
         guard let title = self.title else { return }
         let attributes: [NSAttributedString.Key: Any] = [.font: font, .foregroundColor: color]
         let attributedTitle = NSMutableAttributedString(string: title, attributes: attributes)
@@ -98,14 +98,14 @@ extension UIAlertController {
     ///   - message: alert message
     ///   - font: alert message font
     ///   - color: alert message color
-    func set(message: String?, font: UIFont, color: UIColor) {
+    public func set(message: String?, font: UIFont, color: UIColor) {
         if message != nil {
             self.message = message
         }
         setMessage(font: font, color: color)
     }
     
-    func setMessage(font: UIFont, color: UIColor) {
+    public func setMessage(font: UIFont, color: UIColor) {
         guard let message = self.message else { return }
         let attributes: [NSAttributedString.Key: Any] = [.font: font, .foregroundColor: color]
         let attributedMessage = NSMutableAttributedString(string: message, attributes: attributes)
@@ -117,7 +117,7 @@ extension UIAlertController {
     /// - Parameters:
     ///   - vc: ViewController
     ///   - height: height of content viewController
-    func set(vc: UIViewController?, width: CGFloat? = nil, height: CGFloat? = nil) {
+    public func set(vc: UIViewController?, width: CGFloat? = nil, height: CGFloat? = nil) {
         guard let vc = vc else { return }
         setValue(vc, forKey: "contentViewController")
         if let height = height {

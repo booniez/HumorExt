@@ -92,14 +92,14 @@ public extension UIColor {
 // MARK: - Initializers
 extension UIColor {
     
-    convenience init(hex: Int, alpha: CGFloat) {
+    public convenience init(hex: Int, alpha: CGFloat) {
         let r = CGFloat((hex & 0xFF0000) >> 16)/255
         let g = CGFloat((hex & 0xFF00) >> 8)/255
         let b = CGFloat(hex & 0xFF)/255
         self.init(red: r, green: g, blue: b, alpha: alpha)
     }
     
-    convenience init(hex: Int) {
+    public convenience init(hex: Int) {
         self.init(hex: hex, alpha: 1.0)
     }
     
@@ -109,7 +109,7 @@ extension UIColor {
      - parameter hexString: HEX String in "#363636" format
      - returns: UIColor from HexString
      */
-    convenience init(hexString: String, alpha: CGFloat) {
+    public convenience init(hexString: String, alpha: CGFloat) {
 
         let hexString: String       = (hexString as NSString).trimmingCharacters(in: .whitespacesAndNewlines)
         let scanner                 = Scanner(string: hexString as String)

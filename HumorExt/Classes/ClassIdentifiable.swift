@@ -5,7 +5,7 @@ protocol ClassIdentifiable: class {
 }
 
 extension ClassIdentifiable {
-    static var reuseId: String {
+    public static var reuseId: String {
         return String(describing: self)
     }
 }

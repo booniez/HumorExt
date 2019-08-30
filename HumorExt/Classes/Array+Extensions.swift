@@ -82,7 +82,7 @@ extension Array where Element: Equatable {
 	/// Remove all instances of an item from array.
 	///
 	/// - Parameter item: item to remove.
-    mutating func removeAll(_ item: Element) {
+    public mutating func removeAll(_ item: Element) {
 		self = self.filter { $0 != item }
 	}
     
@@ -92,7 +92,7 @@ extension Array where Element: Equatable {
     /// - parameter array: to chunk
     /// - parameter size: size of each chunk
     /// - returns: array elements chunked
-    func chunk(size: Int = 1) -> [[Element]] {
+    public func chunk(size: Int = 1) -> [[Element]] {
         var result = [[Element]]()
         var chunk = -1
         for (index, elem) in self.enumerated() {
