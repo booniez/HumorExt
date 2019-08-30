@@ -52,7 +52,7 @@ public extension Array {
 	///
 	/// - Parameter elements: array of elements to check.
 	/// - Returns: true if array contains all given items.
-	public func contains(_ elements: [Element]) -> Bool {
+    func contains(_ elements: [Element]) -> Bool {
 		guard !elements.isEmpty else { // elements array is empty
 			return false
 		}
@@ -69,7 +69,7 @@ public extension Array {
 	///
 	/// - Parameter item: item to check.
 	/// - Returns: an array with all indexes of the given item.
-	public func indexes(of item: Element) -> [Int] {
+    func indexes(of item: Element) -> [Int] {
 		var indexes: [Int] = []
 		for index in 0..<self.count {
 			if self[index] == item {
@@ -82,7 +82,7 @@ public extension Array {
 	/// Remove all instances of an item from array.
 	///
 	/// - Parameter item: item to remove.
-	public mutating func removeAll(_ item: Element) {
+    mutating func removeAll(_ item: Element) {
 		self = self.filter { $0 != item }
 	}
     
@@ -92,7 +92,7 @@ public extension Array {
     /// - parameter array: to chunk
     /// - parameter size: size of each chunk
     /// - returns: array elements chunked
-    public func chunk(size: Int = 1) -> [[Element]] {
+    func chunk(size: Int = 1) -> [[Element]] {
         var result = [[Element]]()
         var chunk = -1
         for (index, elem) in self.enumerated() {

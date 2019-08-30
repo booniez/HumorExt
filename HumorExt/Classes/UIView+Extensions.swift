@@ -8,7 +8,7 @@ public extension UIView {
     
     @IBInspectable
     /// Should the corner be as circle
-    public var circleCorner: Bool {
+    var circleCorner: Bool {
         get {
             return min(bounds.size.height, bounds.size.width) / 2 == cornerRadius
         }
@@ -19,7 +19,7 @@ public extension UIView {
     
     @IBInspectable
     /// Corner radius of view; also inspectable from Storyboard.
-    public var cornerRadius: CGFloat {
+    var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -31,7 +31,7 @@ public extension UIView {
     
     @IBInspectable
     /// Border color of view; also inspectable from Storyboard.
-    public var borderColor: UIColor? {
+    var borderColor: UIColor? {
         get {
             guard let color = layer.borderColor else {
                 return nil
@@ -49,7 +49,7 @@ public extension UIView {
     
     @IBInspectable
     /// Border width of view; also inspectable from Storyboard.
-    public var borderWidth: CGFloat {
+    var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -60,7 +60,7 @@ public extension UIView {
     
     @IBInspectable
     /// Shadow color of view; also inspectable from Storyboard.
-    public var shadowColor: UIColor? {
+    var shadowColor: UIColor? {
         get {
             guard let color = layer.shadowColor else {
                 return nil
@@ -74,7 +74,7 @@ public extension UIView {
     
     @IBInspectable
     /// Shadow offset of view; also inspectable from Storyboard.
-    public var shadowOffset: CGSize {
+    var shadowOffset: CGSize {
         get {
             return layer.shadowOffset
         }
@@ -85,7 +85,7 @@ public extension UIView {
     
     @IBInspectable
     /// Shadow opacity of view; also inspectable from Storyboard.
-    public var shadowOpacity: Double {
+    var shadowOpacity: Double {
         get {
             return Double(layer.shadowOpacity)
         }
@@ -96,7 +96,7 @@ public extension UIView {
     
     @IBInspectable
     /// Shadow radius of view; also inspectable from Storyboard.
-    public var shadowRadius: CGFloat {
+    var shadowRadius: CGFloat {
         get {
             return layer.shadowRadius
         }
@@ -107,7 +107,7 @@ public extension UIView {
     
     @IBInspectable
     /// Shadow path of view; also inspectable from Storyboard.
-    public var shadowPath: CGPath? {
+    var shadowPath: CGPath? {
         get {
             return layer.shadowPath
         }
@@ -119,7 +119,7 @@ public extension UIView {
     @IBInspectable
     /// Should shadow rasterize of view; also inspectable from Storyboard.
     /// cache the rendered shadow so that it doesn't need to be redrawn
-    public var shadowShouldRasterize: Bool {
+    var shadowShouldRasterize: Bool {
         get {
             return layer.shouldRasterize
         }
@@ -131,7 +131,7 @@ public extension UIView {
     @IBInspectable
     /// Should shadow rasterize of view; also inspectable from Storyboard.
     /// cache the rendered shadow so that it doesn't need to be redrawn
-    public var shadowRasterizationScale: CGFloat {
+    var shadowRasterizationScale: CGFloat {
         get {
             return layer.rasterizationScale
         }
@@ -142,7 +142,7 @@ public extension UIView {
     
     @IBInspectable
     /// Corner radius of view; also inspectable from Storyboard.
-    public var maskToBounds: Bool {
+    var maskToBounds: Bool {
         get {
             return layer.masksToBounds
         }

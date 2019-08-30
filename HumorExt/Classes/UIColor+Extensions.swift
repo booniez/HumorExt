@@ -90,7 +90,7 @@ public extension UIColor {
 }
 
 // MARK: - Initializers
-public public extension UIColor {
+public extension UIColor {
     
     convenience init(hex: Int, alpha: CGFloat) {
         let r = CGFloat((hex & 0xFF0000) >> 16)/255
