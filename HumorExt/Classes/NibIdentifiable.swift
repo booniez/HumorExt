@@ -40,7 +40,7 @@ extension NibIdentifiable where Self: UIViewController {
     }
 }
 
-public extension UIViewController: NibIdentifiable {
+extension UIViewController: NibIdentifiable {
     static var nibIdentifier: String {
         return String(describing: self)
     }
