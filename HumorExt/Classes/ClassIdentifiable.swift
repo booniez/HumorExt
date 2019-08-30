@@ -1,6 +1,6 @@
 import UIKit
 
-protocol ClassIdentifiable: class {
+public protocol ClassIdentifiable: class {
     static var reuseId: String { get }
 }
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HumorExt'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'Humor Extension'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,4 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.frameworks = 'Foundation', 'UIKit'
-  s.dependency 'RxCocoa'
-  s.dependency 'RxSwift'
 end
