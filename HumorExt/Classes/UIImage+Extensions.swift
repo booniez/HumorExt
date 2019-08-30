@@ -165,7 +165,7 @@ public extension UIImage {
         let context = UIGraphicsGetCurrentContext()
         
         context?.concatenate(CGAffineTransform(translationX: viewWidth / 2, y: viewHeight / 2))
-        context?.concatenate(CGAffineTransform(rotationAngle: CGFloat(M_PI_2 / 3)))
+        context?.concatenate(CGAffineTransform(rotationAngle: CGFloat(Double.pi / 2 / 3)))
         context?.concatenate(CGAffineTransform(translationX: -viewWidth / 2, y: -viewHeight / 2))
         
         let horCount: Int = Int(sqrtLength / CGFloat(strWidth + HORIZONTAL_SPACE)) + 1

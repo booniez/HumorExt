@@ -1,6 +1,6 @@
 import UIKit
 
-public extension UICollectionView {
+extension UICollectionView {
 
     func register<C: UICollectionViewCell>(cellType: C.Type) where C: ClassIdentifiable {
         register(cellType.self, forCellWithReuseIdentifier: cellType.reuseId)

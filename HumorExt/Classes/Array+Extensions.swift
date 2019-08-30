@@ -40,10 +40,10 @@ public extension Array {
     }
 }
 
- public extension Array where Element: Equatable {
+extension Array where Element: Equatable {
     
     /// Remove Dublicates
-    var unique: [Element] {
+    public var unique: [Element] {
         // Thanks to https://github.com/sairamkotha for improving the method
         return self.reduce([]){ $0.contains($1) ? $0 : $0 + [$1] }
     }
@@ -52,7 +52,7 @@ public extension Array {
 	///
 	/// - Parameter elements: array of elements to check.
 	/// - Returns: true if array contains all given items.
-    func contains(_ elements: [Element]) -> Bool {
+    public func contains(_ elements: [Element]) -> Bool {
 		guard !elements.isEmpty else { // elements array is empty
 			return false
 		}
@@ -69,7 +69,7 @@ public extension Array {
 	///
 	/// - Parameter item: item to check.
 	/// - Returns: an array with all indexes of the given item.
-    func indexes(of item: Element) -> [Int] {
+    public func indexes(of item: Element) -> [Int] {
 		var indexes: [Int] = []
 		for index in 0..<self.count {
 			if self[index] == item {
