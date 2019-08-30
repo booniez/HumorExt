@@ -41,12 +41,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6F02F3A87B018D624E98C6E0 /* Pods_HumorExt_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumorExt_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7486AE5A5FEB431D7AFA4B2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		867AB39B298B61D02D31F171 /* HumorExt.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HumorExt.podspec; path = ../HumorExt.podspec; sourceTree = "<group>"; };
+		7486AE5A5FEB431D7AFA4B2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		867AB39B298B61D02D31F171 /* HumorExt.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HumorExt.podspec; path = ../HumorExt.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8B1C3B0F4C2EE1DBF73864A8 /* Pods_HumorExt_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumorExt_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD719798A470A9C816A8689 /* Pods-HumorExt_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumorExt_Example.release.xcconfig"; path = "Target Support Files/Pods-HumorExt_Example/Pods-HumorExt_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D5B0144202C2FA9B22A159D2 /* Pods-HumorExt_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumorExt_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HumorExt_Tests/Pods-HumorExt_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E21100BFB474BFD22A730308 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E21100BFB474BFD22A730308 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				D5B0144202C2FA9B22A159D2 /* Pods-HumorExt_Tests.debug.xcconfig */,
 				2166FFA3E125981B877600DF /* Pods-HumorExt_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
