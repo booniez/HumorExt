@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HumorExt'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Humor Extension'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.swift_versions = '5.0'
 
-  # s.source_files = 'HumorExt/Classes/**/*'
+  s.source_files = 'HumorExt/Classes/**/*'
   
   # s.resource_bundles = {
   #   'HumorExt' => ['HumorExt/Assets/*.png']
